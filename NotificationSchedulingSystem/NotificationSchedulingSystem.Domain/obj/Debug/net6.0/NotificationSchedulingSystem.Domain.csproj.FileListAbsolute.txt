@@ -1,0 +1,12 @@
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\bin\Debug\net6.0\NotificationSchedulingSystem.Domain.deps.json
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\bin\Debug\net6.0\NotificationSchedulingSystem.Domain.dll
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\bin\Debug\net6.0\NotificationSchedulingSystem.Domain.pdb
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.csproj.AssemblyReference.cache
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.AssemblyInfo.cs
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.dll
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\refint\NotificationSchedulingSystem.Domain.dll
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\NotificationSchedulingSystem.Domain.pdb
+C:\Users\Emilija\Documents\GitHub\.NET\NotificationSchedulingSystem\NotificationSchedulingSystem.Domain\obj\Debug\net6.0\ref\NotificationSchedulingSystem.Domain.dll
