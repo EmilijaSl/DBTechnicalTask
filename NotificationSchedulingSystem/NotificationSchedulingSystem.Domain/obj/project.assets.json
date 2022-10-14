@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\.NET\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\NotificationSchedulingSystem.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\DBTechnicalTask\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\NotificationSchedulingSystem.Domain.csproj",
       "projectName": "NotificationSchedulingSystem.Domain",
-      "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\.NET\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\NotificationSchedulingSystem.Domain.csproj",
+      "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DBTechnicalTask\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\NotificationSchedulingSystem.Domain.csproj",
       "packagesPath": "C:\\Users\\Emilija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\.NET\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DBTechnicalTask\\NotificationSchedulingSystem\\NotificationSchedulingSystem.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emilija\\AppData\\Roaming\\NuGet\\NuGet.Config",

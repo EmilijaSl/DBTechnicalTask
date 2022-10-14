@@ -1,8 +1,10 @@
 using AutoFixture;
+using AutoFixture.Xunit2;
 using Moq;
 using NotificationSchedulingSystem.BL;
 using NotificationSchedulingSystem.Controllers;
 using NotificationSchedulingSystem.DAL;
+using NotificationSchedulingSystem.Domain;
 
 namespace NotificationControllerTest
 {
@@ -21,7 +23,12 @@ namespace NotificationControllerTest
             _fixture = new Fixture();
         }
 
+        [Theory, AutoData]
+        //public async Task Test1(CompanyInformation company)
+        //{
+        //    company.CompanyName = "Norfa";
+        //    var result = new 
+        //}
 
-       
     }
 }

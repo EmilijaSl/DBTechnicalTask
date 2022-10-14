@@ -1,11 +1,4 @@
-﻿using NotificationSchedulingSystem.DAL;
-using NotificationSchedulingSystem.Domain;
-using NotificationSchedulingSystem.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NotificationSchedulingSystem.Domain.Enums;
 
 namespace NotificationSchedulingSystem.BL
 {

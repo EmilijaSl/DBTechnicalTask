@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OG7Tw9LBFmRej+Adl8+Jw9fTCxxsJdeWgvHldDNTVSQ0QAGqMvyUUyv6lQO8f4iwV/9lroH1FPRbiMD+OyF1fg==",
+  "dgSpecHash": "1KEaRbfXqK/SIEBMdjERN3zQN+u7IF5cnmWH9f+rpmsVHpB5sOh5nqhTcSc43+uW8RqIeCpSx/Wadhop+g5hJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\.NET\\NotificationSchedulingSystem\\NotificationSchedulingSystem.DAL\\NotificationSchedulingSystem.DAL.csproj",
+  "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\DBTechnicalTask\\NotificationSchedulingSystem\\NotificationSchedulingSystem.DAL\\NotificationSchedulingSystem.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilija\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

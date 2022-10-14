@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NotificationSchedulingSystem.BL;
-using NotificationSchedulingSystem.Domain;
 using NotificationSchedulingSystem.Dto;
 
 namespace NotificationSchedulingSystem.Controllers
@@ -26,15 +24,11 @@ namespace NotificationSchedulingSystem.Controllers
 
             return company != null ? Ok(company.Notifications.Select(n=>new NotificationDto
             {
-                EntityId = n.Id,
+                EntityId = company.EntityId,
                 SendDate = n.SendDate
             })) : BadRequest(new { ErrorMessage = "User already exist" });
 
         }
-       
-
-
- 
       
     }
 }

@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NotificationSchedulingSystem.Domain;
 using NotificationSchedulingSystem.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NotificationSchedulingSystem.DAL
 {
@@ -24,15 +19,15 @@ namespace NotificationSchedulingSystem.DAL
                 .HasConversion(
                     c => c.ToString(),
                     c => (CompanyType)Enum.Parse(typeof(CompanyType), c)
-                    
                 );
+            modelBuilder
+               .Entity<CompanyInformation>()
+               .Property(p => p.Market)
+               .HasConversion(
+                   c => c.ToString(),
+                   c => (Market)Enum.Parse(typeof(Market), c)
+                        );
 
         }
-       
-
-
-
-
-
     }
 }

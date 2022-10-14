@@ -1,9 +1,4 @@
 ﻿using NotificationSchedulingSystem.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NotificationSchedulingSystem.DAL
 {
@@ -13,6 +8,5 @@ namespace NotificationSchedulingSystem.DAL
         Task CommitAsync();
         Task<CompanyInformation> GetCompanyAsync(string name);
         Task<CompanyInformation> GetCompanyByIdAsync(int id);
-
     }
 }

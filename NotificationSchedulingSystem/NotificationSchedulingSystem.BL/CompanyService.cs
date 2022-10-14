@@ -1,11 +1,6 @@
 ﻿using NotificationSchedulingSystem.DAL;
 using NotificationSchedulingSystem.Domain;
 using NotificationSchedulingSystem.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NotificationSchedulingSystem.BL
 {
@@ -19,7 +14,7 @@ namespace NotificationSchedulingSystem.BL
             _notificationService = notificationService;
         }
 
-        public async Task<CompanyInformation> CreateCompanyAsync(string name, int companyNumber, CompanyType type, Market market)
+        public async Task<CompanyInformation> CreateCompanyAsync(string name, string companyNumber, CompanyType type, Market market)
         {
             var existingCompany = await _repository.GetCompanyAsync(name);
             if (existingCompany != null)
@@ -34,7 +29,7 @@ namespace NotificationSchedulingSystem.BL
                 Market = market,
             };
 
-            var notificationDates =  await _notificationService.AsingNotifications(market, type); //get nt dates
+            var notificationDates =  await _notificationService.AsingNotifications(market, type);
             newCompany.Notifications = notificationDates.Select(i=>new Notification {SendDate = i}).ToList();
 
             await _repository.AddCompanyAsync(newCompany);
