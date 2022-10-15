@@ -5,6 +5,8 @@ using NotificationSchedulingSystem.BL;
 using NotificationSchedulingSystem.Controllers;
 using NotificationSchedulingSystem.DAL;
 using NotificationSchedulingSystem.Domain;
+using NotificationSchedulingSystem.Domain.Enums;
+using NotificationSchedulingSystem.Dto;
 
 namespace NotificationControllerTest
 {
@@ -24,11 +26,13 @@ namespace NotificationControllerTest
         }
 
         [Theory, AutoData]
-        //public async Task Test1(CompanyInformation company)
-        //{
-        //    company.CompanyName = "Norfa";
-        //    var result = new 
-        //}
+        public async Task Test1(CompanyInformation company, string message)
+        {
+            _companyServiceMock.Setup(c => c.CreateCompanyAsync("Test", "0000000000", CompanyType.small, Market.Denmark)).ReturnsAsync(company);
+
+            var result = _sut.CreateNewCompany(company)
+            
+        }
 
     }
 }

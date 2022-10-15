@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CqAQctKG3Q9dort5BQ38ca0z5n1WDhlQ6vhJT15m2YeKfeHrUXQqjG13GeAxcd/ko4efnL/Qm5MDHqWkMa8IPg==",
+  "dgSpecHash": "cOsApF/uNUsON/irBlpwWhP6XBKFLASahTTn76FwkFQYMe0hCgP4gJbLLIElw2jzb/RwAdaRQed88SkVGEMl9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\DBTechnicalTask\\NotificationSchedulingSystem\\CompanyServiceTest\\CompanyServiceTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilija\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
+    "C:\\Users\\Emilija\\.nuget\\packages\\autofixture.xunit2\\4.17.0\\autofixture.xunit2.4.17.0.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\fare\\2.1.1\\fare.2.1.1.nupkg.sha512",

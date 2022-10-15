@@ -19,6 +19,23 @@
           }
         }
       },
+      "AutoFixture.Xunit2/4.17.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoFixture": "4.17.0",
+          "xunit.extensibility.core": "[2.2.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoFixture.Xunit2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoFixture.Xunit2.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Castle.Core/5.1.0": {
         "type": "package",
         "dependencies": {
@@ -3033,6 +3050,27 @@
         "lib/netstandard2.0/AutoFixture.dll",
         "lib/netstandard2.0/AutoFixture.pdb",
         "lib/netstandard2.0/AutoFixture.xml"
+      ]
+    },
+    "AutoFixture.Xunit2/4.17.0": {
+      "sha512": "lrURL/LhJLPkn2tSPUEW8Wscr5LoV2Mr8A+ikn5gwkofex3o7qWUsBswlLw+KCA7EOpeqwZOldp3k91zDF+48Q==",
+      "type": "package",
+      "path": "autofixture.xunit2/4.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofixture.xunit2.4.17.0.nupkg.sha512",
+        "autofixture.xunit2.nuspec",
+        "icon.png",
+        "lib/net452/AutoFixture.Xunit2.dll",
+        "lib/net452/AutoFixture.Xunit2.pdb",
+        "lib/net452/AutoFixture.Xunit2.xml",
+        "lib/netstandard1.5/AutoFixture.Xunit2.dll",
+        "lib/netstandard1.5/AutoFixture.Xunit2.pdb",
+        "lib/netstandard1.5/AutoFixture.Xunit2.xml",
+        "lib/netstandard2.0/AutoFixture.Xunit2.dll",
+        "lib/netstandard2.0/AutoFixture.Xunit2.pdb",
+        "lib/netstandard2.0/AutoFixture.Xunit2.xml"
       ]
     },
     "Castle.Core/5.1.0": {
@@ -8962,6 +9000,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoFixture >= 4.17.0",
+      "AutoFixture.Xunit2 >= 4.17.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "Moq >= 4.18.2",
       "NotificationSchedulingSystem.BL >= 1.0.0",
@@ -9022,6 +9061,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "AutoFixture": {
+            "target": "Package",
+            "version": "[4.17.0, )"
+          },
+          "AutoFixture.Xunit2": {
             "target": "Package",
             "version": "[4.17.0, )"
           },

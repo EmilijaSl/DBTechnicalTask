@@ -9,26 +9,22 @@ namespace NotificationSchedulingSystem.Controllers
     public class NotificationController : ControllerBase
     {
         private readonly ICompanyService _service;
-        private readonly INotificationService _notification;
-
-        public NotificationController(ICompanyService service, INotificationService notification)
+        public NotificationController(ICompanyService service)
         {
             _service = service;
-            _notification = notification;
+            _service = service;
         }
 
         [HttpPost("Create")]
         public async Task<ActionResult> CreateNewCompany([FromBody] CreationDto creationDto)
         {
             var company = await _service.CreateCompanyAsync(creationDto.CompanyName, creationDto.CompanyNumber, creationDto.Type, creationDto.Market);
-
             return company != null ? Ok(company.Notifications.Select(n=>new NotificationDto
             {
                 EntityId = company.EntityId,
                 SendDate = n.SendDate
-            })) : BadRequest(new { ErrorMessage = "User already exist" });
+            })) : BadRequest(new { ErrorMessage = "Company already exist" });
 
         }
-      
     }
 }

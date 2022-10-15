@@ -2,8 +2,8 @@
 {
     public enum CompanyType
     {
-        small,
-        medium,
-        large
+        Small,
+        Medium,
+        Large
     }
 }

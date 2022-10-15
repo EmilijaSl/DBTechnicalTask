@@ -13,7 +13,7 @@ namespace NotificationSchedulingSystem.DAL.Extensions
     {
         public static IServiceCollection AddDAL(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<SystemDbContext>(options => 
+            services.AddDbContext<SystemDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DbConnection")));
 
             services.AddScoped<IDbRepository, DbRepository>();

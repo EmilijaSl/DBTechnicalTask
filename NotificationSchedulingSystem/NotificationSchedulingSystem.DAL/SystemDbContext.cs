@@ -9,7 +9,7 @@ namespace NotificationSchedulingSystem.DAL
         public DbSet<CompanyInformation> Company { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public SystemDbContext(DbContextOptions options) : base(options)
-        { 
+        {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

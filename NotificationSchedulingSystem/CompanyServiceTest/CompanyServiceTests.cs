@@ -1,7 +1,11 @@
 using AutoFixture;
+using AutoFixture.Xunit2;
 using Moq;
 using NotificationSchedulingSystem.BL;
 using NotificationSchedulingSystem.DAL;
+using NotificationSchedulingSystem.Domain;
+using NotificationSchedulingSystem.Domain.Enums;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CompanyServiceTest
 {
@@ -13,7 +17,7 @@ namespace CompanyServiceTest
         private readonly Fixture _fixture;
 
         public CompanyServiceTests()
-        { 
+        {
             _dbRepositoryMock = new Mock<IDbRepository>();
             _notificationServiceMock = new Mock<INotificationService>();
             _fixture = new Fixture();
@@ -21,15 +25,16 @@ namespace CompanyServiceTest
         }
 
 
-        [Fact]
-        //public async void Test1(CompanyInformation company)
-            
-        //{
-        //    company.CompanyName = "Norfa";
-        //    var result = 
-        //    _dbRepositoryMock.Setup(i => i.GetCompanyAsync(It.IsAny<string>())).ReturnsAsync(company);
+        [Theory, AutoData]
+        public void Test1(CompanyInformation company)
 
-        //    var result = await _sut.
-        //}
+        {
+    
+
+            //_dbRepositoryMock.Setup(a => a.GetCompanyAsync("Norfa")).ReturnsAsync(company);
+            //var result = _sut.CreateCompanyAsync("Norfa", "0000000000", CompanyType.small, Market.Denmark);
+
+            //Assert.NotNull(result);
+        }
     }
 }

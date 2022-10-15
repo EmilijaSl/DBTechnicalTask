@@ -29,22 +29,12 @@ namespace NotificationSchedulingSystem.BL
                 Market = market,
             };
 
-            var notificationDates =  await _notificationService.AsingNotifications(market, type);
-            newCompany.Notifications = notificationDates.Select(i=>new Notification {SendDate = i}).ToList();
+            var notificationDates = await _notificationService.AsingNotifications(market, type);
+            newCompany.Notifications = notificationDates.Select(i => new Notification { SendDate = i }).ToList();
 
             await _repository.AddCompanyAsync(newCompany);
             await _repository.CommitAsync();
-            return  newCompany;
+            return newCompany;
         }
-
-        
-        
-
-
-
-
-
-
-   
     }
 }

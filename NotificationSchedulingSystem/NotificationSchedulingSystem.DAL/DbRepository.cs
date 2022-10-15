@@ -13,8 +13,8 @@ namespace NotificationSchedulingSystem.DAL
         }
 
         public async Task AddCompanyAsync(CompanyInformation company)
-        { 
-        _dbContext.Company.Add(company);
+        {
+            _dbContext.Company.Add(company);
         }
         public async Task CommitAsync()
         {
@@ -29,7 +29,5 @@ namespace NotificationSchedulingSystem.DAL
         {
             return await _dbContext.Company.FirstOrDefaultAsync(i => i.EntityId == id);
         }
-
-       
     }
 }

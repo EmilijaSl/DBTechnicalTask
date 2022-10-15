@@ -2,10 +2,8 @@
 
 namespace NotificationSchedulingSystem.BL
 {
-    public class NotificationService :INotificationService
+    public class NotificationService : INotificationService
     {
-    
-
         public async Task<IEnumerable<DateTime>> AsingNotifications(Market market, CompanyType companyType)
         {
 
@@ -19,7 +17,7 @@ namespace NotificationSchedulingSystem.BL
                     notifications = new int[] { 1, 5, 10, 20 };
                     break;
                 case Market.Sweden:
-                    if (companyType == CompanyType.small || companyType == CompanyType.medium)
+                    if (companyType == CompanyType.Small || companyType == CompanyType.Medium)
                     {
                         notifications = new int[] { 1, 7, 14, 28 };
                     }
@@ -29,7 +27,7 @@ namespace NotificationSchedulingSystem.BL
                     }
                     break;
                 case Market.Finland:
-                    if (companyType == CompanyType.large)
+                    if (companyType == CompanyType.Large)
                     {
                         notifications = new int[] { 1, 5, 10, 15, 20 };
                     }
@@ -52,23 +50,17 @@ namespace NotificationSchedulingSystem.BL
 
 
                 }
-                else if(DateTime.Today.Month < 12)
+                else if (DateTime.Today.Month < 12)
                 {
                     notificationsList.Add(new DateTime(DateTime.Today.Year, DateTime.Today.Month + 1, item));
                 }
                 else
                 {
-                    notificationsList.Add(new DateTime(DateTime.Today.Year + 1, 1 , item));
+                    notificationsList.Add(new DateTime(DateTime.Today.Year + 1, 1, item));
                 }
             }
-            DateTime exactDate = DateTime.Today.Date;
             return notificationsList;
         }
-
-    
-
-
-
     }
 }
 
