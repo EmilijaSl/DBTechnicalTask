@@ -29,6 +29,7 @@ namespace NotificationSchedulingSystem.BL
                 Market = market,
             };
 
+
             var notificationDates = await _notificationService.AsingNotifications(market, type);
             newCompany.Notifications = notificationDates.Select(i => new Notification { SendDate = i }).ToList();
 
