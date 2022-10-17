@@ -25,7 +25,7 @@ namespace NotificationSchedulingSystem.DAL
         {
             return await _dbContext.Company.FirstOrDefaultAsync(i => i.CompanyName == name);
         }
-        public async Task<CompanyInformation> GetCompanyByIdAsync(int id)
+        public async Task<CompanyInformation> GetCompanyByIdAsync(Guid id) //string
         {
             return await _dbContext.Company.FirstOrDefaultAsync(i => i.EntityId == id);
         }

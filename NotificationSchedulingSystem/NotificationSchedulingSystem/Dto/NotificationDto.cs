@@ -2,7 +2,7 @@
 {
     public class NotificationDto
     {
-        public int EntityId { get; set; }
-        public DateTime SendDate { get; set; }
+        public Guid CompanyId { get; set; }
+        public List<DateTime> SendDate { get; set; }
     }
 }

@@ -7,6 +7,6 @@ namespace NotificationSchedulingSystem.DAL
         Task AddCompanyAsync(CompanyInformation company);
         Task CommitAsync();
         Task<CompanyInformation> GetCompanyAsync(string name);
-        Task<CompanyInformation> GetCompanyByIdAsync(int id);
+        Task<CompanyInformation> GetCompanyByIdAsync(Guid id);
     }
 }

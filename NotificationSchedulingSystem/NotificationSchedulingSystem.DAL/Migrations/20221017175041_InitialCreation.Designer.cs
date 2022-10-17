@@ -12,7 +12,7 @@ using NotificationSchedulingSystem.DAL;
 namespace NotificationSchedulingSystem.DAL.Migrations
 {
     [DbContext(typeof(SystemDbContext))]
-    [Migration("20221014063252_InitialCreation")]
+    [Migration("20221017175041_InitialCreation")]
     partial class InitialCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,11 +26,9 @@ namespace NotificationSchedulingSystem.DAL.Migrations
 
             modelBuilder.Entity("NotificationSchedulingSystem.Domain.CompanyInformation", b =>
                 {
-                    b.Property<int>("EntityId")
+                    b.Property<Guid>("EntityId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EntityId"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CompanyName")
                         .HasColumnType("nvarchar(max)");
@@ -54,14 +52,12 @@ namespace NotificationSchedulingSystem.DAL.Migrations
 
             modelBuilder.Entity("NotificationSchedulingSystem.Domain.Notification", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("EntityId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("SendDate")
                         .HasColumnType("datetime2");
